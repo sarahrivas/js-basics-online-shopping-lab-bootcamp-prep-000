@@ -34,7 +34,7 @@ function viewCart() {
         if (i !== cart.length - 2) {
           cartContents += ', and ';
         } else {
-          cartContents += ',';
+          cartContents += ', ';
         }
       }
     } else {
