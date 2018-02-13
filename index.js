@@ -27,25 +27,21 @@ function viewCart() {
     var item = cart[i];
     var itemName = Object.keys(item)[0];
     cartContents += `${itemName} at $${item[itemName]}`;
-    if (i !== cart.length - 1) {
-      if (cart.length < 3) {
-        cartContents += ' and ';
+    if (cart.length === 1) {
+      cartContents += '.';
+    } else if (cart.length === 2) {
+      if (i === cart.length - 1) {
+        cartContents += '.';
       } else {
-        if (i !== cart.length - 2) {
-          cartContents += ', and ';
-        } else {
-          cartContents += ', ';
-        }
+        cartContents += ' and  '
       }
     } else {
-      if (cart.length > 1) {
-        if (cart.length === 2) {
-          cartContents += ' and ';
-        } else {
-          cartContents += ',';
-        }
-      } else {
+      if (i === cart.length - 1) {
         cartContents += '.';
+      } else if (i === cart.length - 2) {
+        cartContents += ', and '
+      } else {
+        cartContents += ', ';
       }
     }
   }
