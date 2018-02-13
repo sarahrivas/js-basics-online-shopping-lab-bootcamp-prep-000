@@ -53,7 +53,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var total = 0;
+  for (var i = 0; i < carts.length; i++) {
+    total += Object.values(carts[i])[0];
+  }
+  return total;
 }
 
 function removeFromCart(item) {
