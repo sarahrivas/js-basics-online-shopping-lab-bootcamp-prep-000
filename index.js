@@ -62,9 +62,19 @@ function total() {
 
 function removeFromCart(item) {
   var matchingItem;
+  var matchingItemIndex;
   for (var i = 0; i < cart.length; i++) {
-    total += Object.values(cart[i])[0];
-  }  
+    var itemKey = Object.keys(cart[i])[0];
+    if (itemKey === item) {
+      matchingItem = cart[i];
+      matchingItemIndex = i;
+    }
+  }
+  if (matchingItem === undefined) {
+    return "That item is not in your cart.";
+  }
+  cart.splice(i, 1);
+  return cart;
 }
 
 function placeOrder(cardNumber) {
