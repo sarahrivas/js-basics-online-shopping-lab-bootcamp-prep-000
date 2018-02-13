@@ -54,8 +54,8 @@ function viewCart() {
 
 function total() {
   var total = 0;
-  for (var i = 0; i < carts.length; i++) {
-    total += Object.values(carts[i])[0];
+  for (var i = 0; i < cart.length; i++) {
+    total += Object.values(cart[i])[0];
   }
   return total;
 }
