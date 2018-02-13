@@ -26,7 +26,7 @@ function viewCart() {
   for(var i = 0; i <cart.length; i++) {
     var item = cart[i];
     var itemName = Object.keys(item)[0];
-    cartContents += `${itemName} at ${item[itemName]}`;
+    cartContents += `${itemName} at $${item[itemName]}`;
     if (i !== cart.length - 1) {
       if (cart.length < 3) {
         cartContents += ' and ';
