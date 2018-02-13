@@ -73,7 +73,7 @@ function removeFromCart(item) {
   if (matchingItem === undefined) {
     return "That item is not in your cart.";
   }
-  cart.splice(i, 1);
+  cart.splice(matchingItemIndex, 1);
   return cart;
 }
 
