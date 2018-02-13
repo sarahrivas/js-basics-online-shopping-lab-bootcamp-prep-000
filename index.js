@@ -38,7 +38,11 @@ function viewCart() {
         }
       }
     } else {
-      cartContents += '.';
+      if (cart.length > 1) {
+        cartContents += ',';
+      } else {
+        cartContents += '.';
+      }
     }
   }
    console.log(cartContents);
