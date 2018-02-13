@@ -20,7 +20,7 @@ function viewCart() {
   var cart = getCart();
   var cartContents = "In your cart, you have "
   if (cart.length === 0) {
-    return ["Your shopping cart is empty."];
+    return "Your shopping cart is empty.";
   }
   // for(var i = 0; i <cart.length; i++) {
   //   var item = cart[i];
