@@ -39,7 +39,11 @@ function viewCart() {
       }
     } else {
       if (cart.length > 1) {
-        cartContents += ',';
+        if (cart.length === 2) {
+          cartContents += ' and ';
+        } else {
+          cartContents += ',';
+        }
       } else {
         cartContents += '.';
       }
