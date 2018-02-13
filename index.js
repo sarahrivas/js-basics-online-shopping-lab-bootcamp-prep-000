@@ -61,7 +61,10 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var matchingItem;
+  for (var i = 0; i < cart.length; i++) {
+    total += Object.values(cart[i])[0];
+  }  
 }
 
 function placeOrder(cardNumber) {
