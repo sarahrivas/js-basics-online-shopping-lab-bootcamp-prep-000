@@ -71,7 +71,8 @@ function removeFromCart(item) {
     }
   }
   if (matchingItem === undefined) {
-    return "That item is not in your cart.";
+    console.log("That item is not in your cart.");
+    return;
   }
   cart.splice(matchingItemIndex, 1);
   return cart;
