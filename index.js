@@ -33,7 +33,7 @@ function viewCart() {
       if (i === cart.length - 1) {
         cartContents += '.';
       } else {
-        cartContents += ' and  '
+        cartContents += ' and '
       }
     } else {
       if (i === cart.length - 1) {
