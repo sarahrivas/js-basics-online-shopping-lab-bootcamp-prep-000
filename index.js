@@ -30,9 +30,7 @@ function viewCart() {
     if (i === cart.length - 1) {
       cartContents += '.';
     } else if (cart.length === 2) {
-
         cartContents += ' and '
-      
     } else {
       if (i === cart.length - 1) {
         cartContents += '.';
