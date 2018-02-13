@@ -39,6 +39,7 @@ function viewCart() {
       cartContents += '.';
     }
   }
+  return cartContents;
 }
 
 function total() {
